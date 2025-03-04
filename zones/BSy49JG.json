@@ -11,10 +11,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_code_output_1",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_t_shirt_data_distinct_1",
       "objectType": "RECIPE"
     }
