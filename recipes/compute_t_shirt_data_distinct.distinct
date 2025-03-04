@@ -57,7 +57,12 @@
       "readParams": {
         "mode": "AUTO",
         "autoModeRepartitionInto": 10,
-        "map": {}
+        "map": {
+          "t_shirt_data": {
+            "cache": false,
+            "repartition": 10
+          }
+        }
       },
       "overwriteOutputSchema": false,
       "executionEngine": "SPARK_SUBMIT",
@@ -69,6 +74,45 @@
   },
   "outputColumnNameOverrides": {},
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "order_date",
+            "type": "string"
+          },
+          {
+            "name": "pages_visited",
+            "type": "bigint"
+          },
+          {
+            "name": "order_id",
+            "type": "string"
+          },
+          {
+            "name": "customer_id",
+            "type": "string"
+          },
+          {
+            "name": "tshirt_category",
+            "type": "string"
+          },
+          {
+            "name": "tshirt_price",
+            "type": "double"
+          },
+          {
+            "name": "tshirt_quantity",
+            "type": "bigint"
+          },
+          {
+            "name": "total",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
