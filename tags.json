@@ -3,12 +3,20 @@
     "duplicated": {
       "color": "#3A85AD"
     },
-    "Technical Dimension:GIT": {},
-    "Asset:Standard Enablement Content": {},
-    "recipe-editor": {},
+    "Technical Dimension:GIT": {
+      "color": "#de1ea5"
+    },
+    "Asset:Standard Enablement Content": {
+      "color": "#94be8e"
+    },
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
     "imported": {
       "color": "#263238"
     },
-    "Technical Dimension:Version control": {}
+    "Technical Dimension:Version control": {
+      "color": "#FFD83D"
+    }
   }
 }
