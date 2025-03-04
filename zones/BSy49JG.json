@@ -3,10 +3,6 @@
   "color": "#087ABF",
   "items": [
     {
-      "objectId": "compute_t_shirt_data_prepared_eddy",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_t_shirt_data_distinct_1",
       "objectType": "RECIPE"
     }
