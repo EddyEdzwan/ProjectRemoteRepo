@@ -8,6 +8,10 @@
       },
       {
         "d": true,
+        "name": "order_date_parsed"
+      },
+      {
+        "d": true,
         "name": "pages_visited"
       },
       {
@@ -70,7 +74,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateParser",
@@ -89,6 +93,22 @@
           "name": "out",
           "type": "date"
         }
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnBadType",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "customer_id"
+        ],
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "type": "LongMeaning"
       },
       "alwaysShowComment": false
     }
@@ -124,6 +144,7 @@
     "tshirt_category": 155,
     "order_date": 120,
     "total": 134,
+    "order_date_parsed": 183,
     "tshirt_quantity": 128,
     "tshirt_price": 134,
     "customer_id": 100,
