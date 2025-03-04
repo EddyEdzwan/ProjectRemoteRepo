@@ -3,10 +3,6 @@
   "color": "#0F786B",
   "items": [
     {
-      "objectId": "t_shirt_data_distinct",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_t_shirt_data_distinct",
       "objectType": "RECIPE"
     }
