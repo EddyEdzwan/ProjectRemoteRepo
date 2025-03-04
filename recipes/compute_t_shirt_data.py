@@ -21,8 +21,6 @@ with Input_Datasets.get_download_stream(first_file_path) as f:
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df = pd.read_csv(BytesIO(data))
 
-# Add new lines
-
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df['total'] = df['tshirt_price'] * df['tshirt_quantity']
 
