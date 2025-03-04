@@ -68,6 +68,10 @@
   "schema": {
     "columns": [
       {"name":"customer_id","type":"string"},
+      {"name":"tshirt_price_min","type":"double"},
+      {"name":"tshirt_price_max","type":"double"},
+      {"name":"tshirt_price_avg","type":"double"},
+      {"name":"tshirt_price_sum","type":"double"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
