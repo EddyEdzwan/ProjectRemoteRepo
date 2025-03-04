@@ -1,12 +1,7 @@
 {
   "name": "Hui Xiang Zone",
   "color": "#0F786B",
-  "items": [
-    {
-      "objectId": "compute_t_shirt_data_distinct",
-      "objectType": "RECIPE"
-    }
-  ],
+  "items": [],
   "shared": [],
   "position": {},
   "tags": [],
