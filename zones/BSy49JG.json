@@ -1,7 +1,16 @@
 {
   "name": "Eddy Zone",
   "color": "#087ABF",
-  "items": [],
+  "items": [
+    {
+      "objectId": "t_shirt_data_prepared_eddy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_t_shirt_data_prepared_eddy",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
