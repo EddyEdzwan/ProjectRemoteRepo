@@ -1,12 +1,7 @@
 {
   "name": "Eddy Zone",
   "color": "#087ABF",
-  "items": [
-    {
-      "objectId": "compute_t_shirt_data_distinct_1",
-      "objectType": "RECIPE"
-    }
-  ],
+  "items": [],
   "shared": [],
   "position": {},
   "tags": [],
