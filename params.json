@@ -44,7 +44,7 @@
       "respectTraversalOrder": false,
       "zonesManualPositioning": false
     },
-    "gitCommitMode": "RECIPES_EXPLICIT",
+    "gitCommitMode": "AUTO",
     "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
