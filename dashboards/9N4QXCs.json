@@ -1,0 +1,42 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "columnNumber": 36,
+  "creationTag": {
+    "extendedProperties": {},
+    "lastModifiedBy": {
+      "login": "lauren.diperna"
+    },
+    "lastModifiedOn": 1727886179978,
+    "versionNumber": 0
+  },
+  "customFields": {},
+  "listed": true,
+  "name": "[STARTER] Collaboration with Git and DSS's default dashboard",
+  "owner": "lauren.diperna",
+  "pages": [
+    {
+      "backgroundColor": "#ffffff",
+      "enableCrossFilters": true,
+      "filtersParams": {
+        "engineType": "LINO",
+        "panelPosition": "TOP"
+      },
+      "grid": {
+        "tiles": []
+      },
+      "id": "YSyNFOC",
+      "show": true,
+      "showFilterPanel": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28
+    }
+  ],
+  "reloadWhenEventReceived": false,
+  "showGrid": false,
+  "showNavigationArrows": false,
+  "tags": []
+}
