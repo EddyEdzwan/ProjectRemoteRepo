@@ -8,7 +8,7 @@
         "input": "pages_visited",
         "col": "pages_visited",
         "$showList": false,
-        "num": 0,
+        "num": 5,
         "operator": "\u003e  [number]"
       }
     ]
