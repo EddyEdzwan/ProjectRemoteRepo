@@ -29,7 +29,11 @@
         "readParams": {
           "mode": "AUTO",
           "autoModeRepartitionInto": 10,
-          "map": {}
+          "map": {
+            "t_shirt_data": {
+              "repartition": 10
+            }
+          }
         },
         "sparkConfig": {
           "inheritConf": "spark-XS-2-workers-of-1-CPU-3Gb-Ram",
