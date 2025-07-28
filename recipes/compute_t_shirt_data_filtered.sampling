@@ -6,7 +6,7 @@
     "conditions": [
       {
         "input": "pages_visited",
-        "col": "pages_visited",
+        "col": "order_date",
         "$showList": false,
         "num": 5,
         "operator": "\u003e  [number]"
