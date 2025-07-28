@@ -13,7 +13,8 @@
   "flowOptions": {
     "virtualizable": false,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -74,10 +75,7 @@
       {"name":"tshirt_category","type":"string"},
       {"name":"tshirt_price","type":"double"},
       {"name":"tshirt_quantity","type":"bigint"},
-      {"name":"Year","type":"int"},
-      {"name":"Month","type":"int"},
-      {"name":"Day","type":"int"},
-      {"name":"Hour","type":"int"}
+      {"name":"total","type":"double"}
     ],
     "userModified": false
   },
