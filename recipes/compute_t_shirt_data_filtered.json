@@ -21,6 +21,7 @@
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
+    "engineType": "DSS",
     "engineParams": {
       "dssEngineMaxThreads": 4,
       "sparkSQL": {
