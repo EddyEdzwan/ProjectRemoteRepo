@@ -24,17 +24,11 @@ df = pd.read_csv(BytesIO(data))
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df['total'] = df['tshirt_price'] * df['tshirt_quantity']
 
-# New line in the demo
-# another line
-
 # update text category description
 df['tshirt_category'] = df['tshirt_category'].str.replace('Wh ', 'White ')
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 processed_dataset_df = df
-# line from branch 2
-
-# new lines added from branch 2
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs

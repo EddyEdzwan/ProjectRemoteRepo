@@ -11,10 +11,9 @@
     "kv": {}
   },
   "flowOptions": {
-    "virtualizable": false,
+    "virtualizable": true,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT",
-    "ignoreErrorStatusOnBuild": false
+    "crossProjectBuildBehavior": "DEFAULT"
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -31,7 +30,7 @@
     "parquetCompressionMethod": "SNAPPY",
     "parquetFlavor": "HIVE",
     "parquetBlockSizeMB": 128,
-    "readTemporalMode": "AS_RAW"
+    "readTemporalMode": "AS_TEMPORAL"
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -41,18 +40,18 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "lauren.diperna"
+      "login": "eddy.edzwan@dataiku.com"
     },
-    "lastModifiedOn": 1727886282124,
-    "extendedProperties": {}
+    "lastModifiedOn": 1741079636219
   },
   "tags": [],
   "params": {
-    "bucket": "dku-ds-platform-data",
+    "bucket": "gis-dataiker-2-data-1",
     "metastoreSynchronizationEnabled": true,
-    "metastoreTableName": "t_shirt_data",
+    "metastoreDatabaseName": "default",
+    "metastoreTableName": "${projectKey}_t_shirt_data_by_customer_id",
     "connection": "dataiku-managed-storage",
-    "path": "/dataiku/${projectKey}/t_shirt_data",
+    "path": "/managed-dss-data/${projectKey}/t_shirt_data_by_customer_id",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -68,18 +67,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"order_date","type":"string"},
-      {"name":"pages_visited","type":"bigint"},
-      {"name":"order_id","type":"string"},
       {"name":"customer_id","type":"string"},
-      {"name":"tshirt_category","type":"string"},
-      {"name":"tshirt_price","type":"double"},
-      {"name":"tshirt_quantity","type":"bigint"},
-      {"name":"total","type":"double"}
+      {"name":"tshirt_price_min","type":"double"},
+      {"name":"tshirt_price_max","type":"double"},
+      {"name":"tshirt_price_avg","type":"double"},
+      {"name":"tshirt_price_sum","type":"double"},
+      {"name":"count","type":"bigint"}
     ],
-    "userModified": false
+    "userModified": true
   },
-  "typeSystemVersion": "V1",
+  "typeSystemVersion": "V2",
   "dkuProperties": [],
   "metrics": {
     "probes": [
@@ -162,7 +159,5 @@
       "checks": []
     }
   },
-  "customFields": {
-    "gdpr_contains_personal_data": "UNSURE"
-  }
+  "customFields": {}
 }
