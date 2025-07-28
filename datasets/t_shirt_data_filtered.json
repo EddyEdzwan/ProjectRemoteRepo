@@ -11,7 +11,7 @@
     "kv": {}
   },
   "flowOptions": {
-    "virtualizable": false,
+    "virtualizable": true,
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT",
     "ignoreErrorStatusOnBuild": false
@@ -31,7 +31,7 @@
     "parquetCompressionMethod": "SNAPPY",
     "parquetFlavor": "HIVE",
     "parquetBlockSizeMB": 128,
-    "readTemporalMode": "AS_RAW"
+    "readTemporalMode": "AS_TEMPORAL"
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -41,18 +41,18 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "lauren.diperna"
+      "login": "eddy.edzwan@dataiku.com"
     },
-    "lastModifiedOn": 1727886282124,
-    "extendedProperties": {}
+    "lastModifiedOn": 1753413534477
   },
   "tags": [],
   "params": {
-    "bucket": "dku-ds-platform-data",
+    "bucket": "gis-dataiker-2-data-1",
     "metastoreSynchronizationEnabled": true,
-    "metastoreTableName": "t_shirt_data",
+    "metastoreDatabaseName": "default",
+    "metastoreTableName": "${projectKey}_t_shirt_data_filtered",
     "connection": "dataiku-managed-storage",
-    "path": "/dataiku/${projectKey}/t_shirt_data",
+    "path": "/managed-dss-data/${projectKey}/t_shirt_data_filtered",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -77,9 +77,9 @@
       {"name":"tshirt_quantity","type":"bigint"},
       {"name":"total","type":"double"}
     ],
-    "userModified": false
+    "userModified": true
   },
-  "typeSystemVersion": "V1",
+  "typeSystemVersion": "V2",
   "dkuProperties": [],
   "metrics": {
     "probes": [
@@ -162,7 +162,5 @@
       "checks": []
     }
   },
-  "customFields": {
-    "gdpr_contains_personal_data": "UNSURE"
-  }
+  "customFields": {}
 }
